@@ -1,0 +1,47 @@
+<script src="data/2018.js">
+</script>
+
+<ul>
+    <li>
+        <img src="http://specials-images.forbesimg.com/imageserve/59d57f6431358e542c0356b3/416x416.jpg?background=000000&cropX1=177&cropX2=1060&cropY1=178&cropY2=1062"
+            alt="">
+        <b>Micky Arison</b>
+    </li>
+    <li></li>
+    <li></li>
+</ul>
+
+<script>
+
+    // data.sort(function(a,b){
+    //     debugger;
+    //     return a.realTimeRank<b.realTimeRank;
+    // });
+
+    function search_name(mat, keyword) {
+        for(let i=0;i<mat.length;i++) {
+            if(mat[i].name.toLowerCase().indexOf(keyword.toLowerCase()) != -1) {
+                console.info(mat[i].name);
+                console.info(`排名: ${mat[i].rank} 实时排名: ${mat[i].realTimeRank}`);
+                // console.info(mat[i].squareImage);
+                console.info(`http:${mat[i].squareImage}`);
+                console.info(`实时身价: ${mat[i].realTimeWorth/1000.0}B, 身价: ${mat[i].worth/1000.0}B`);
+
+
+                // console.info('%c aa', `padding:50px 300px;line-height:120px;background:url('http:${mat[i].squareImage}');color:red;`);
+                console.info('%c aa', `padding:50px 300px;line-height:120px;background:url('http:${mat[i].squareImage}') no-repeat;color:red;`);
+
+                // console.info('%c aa', `background:url('http${mat[i].squareImage}');color:red;`);
+                console.info(mat[i]);
+            }
+        }
+        return 0;
+    }
+</script>
+
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
